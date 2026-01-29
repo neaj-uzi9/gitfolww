@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Paiement</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: purple;
+    color: white;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+    <h2>Paiement des frais</h2>
+    <form>
+        <input type="text" placeholder="Nom étudiant" required>
+        <input type="number" placeholder="Montant" required>
+        <select>
+            <option>Carte bancaire</option>
+            <option>Mobile Money</option>
+            <option>Virement bancaire</option>
+        </select>
+        <button type="submit">Payer</button>
+    </form>
+</div>
+</body>
+</html>
